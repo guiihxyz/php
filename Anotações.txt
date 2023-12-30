@@ -1,0 +1,49 @@
+FOCO!!!!
+
+echo ou print - printa na tela
+date() - data atual
+date_default_timezone_set() - seta o fuso horário
+
+recomendações para dar nomes:
+1 - Tente dar nomes claros e de fácil identificação
+2 - Evite nomes muito curtos ou muito longos
+3 - Defina um padrão e siga em todo o projeto
+4 - Para variáveis, dê preferência a letras minúsculas
+5 -Para constantes, dê preferência a letras maiúsculas
+6 - Use camelCase para métodos e atributos, exemplo: nomeCompletoCliente
+7 - Use SNAKE_CASE para nomear constantes, exemplo: TELEFONE_CONTATO_FORNECEDOR
+
+0x = hexadecimal
+0b = binário
+0 = octal
+
+forçando o tipo de uma variável:
+$num = (int) "950"; 
+    var_dump($num);
+
+escrever valores booleanos:
+false - vazio, null e 0
+true - 1
+
+símbolo de concatenção .
+
+double quoted - "" há interpretação no conteúdo
+single quoted - '' não há interpretação no conteúdo
+heredoc - echo <<< FRASE
+    estou estudando
+        PHP em 2023
+FRASE;
+a formatação será do jeito digitado
+nowdoc - echo <<< 'FRASE'
+    igual a heredoc, mas sem formatação
+FRASE;
+
+echo "$nom \"Minotauro\" $snom"; - colocar aspas dentro de outra aspas (usando o \, sequência de escape)
+
+sequências de escape:
+\n - quebra a linha
+\t - tabulação horizontal
+\\ - barra invertida
+\$ - sinal de cifrão
+\u{} - codepoint unicode
+\" - sinal de aspas
