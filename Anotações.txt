@@ -47,3 +47,53 @@ sequências de escape:
 \$ - sinal de cifrão
 \u{} - codepoint unicode
 \" - sinal de aspas
+
+superglobais:
+$_GET - gera um array sociativo com todas as variáveis que foi passado por parâmetro através de uma url
+$_POST - pega dados de formulário através do método post
+$_REQUEST - junção de $_GET $_POST $_COOKIES
+$_COOKIES - pega informações dos cookies (pequenas variáveis salvas no navegador por um determinado tempo)
+$_FILES - consegue pegar os arquivos que foram enviados
+$_SESSION - permitem que variáveis de sessão (não são perdidas durante a navegação de páginas) sejam usadas
+$_ENV - variáveis de ambiente do servidor
+$_SERVER - 
+$GLOBALS - mostra os dados de todas as outras superglobais
+
+** só funciona após a versão 5.6 do php
+
+ordem de precedência: (maior em cima)
+() - modificador, não é um operador
+**
+* / %
++ -
+
+funções aritméticas:
+abs() - valor absoluto
+base_convert(x, da base, para a base) - conversor de bases
+ceil() - arredonda o número para cima
+floor() - arredonda o número para baixo
+round() - arredonda o número normalmente
+hypot() - calcula a hipotenusa
+intdiv() - faz a divisão inteira
+min() - mostra um valor mínimo de uma sequência
+max() - mostra um valor máximo de uma sequência
+pi() - mostra o valor de pi (também existe a constante M_PI)
+pow() - calcula a potência (faz a mesma coisa do operador ** mas perde a ordem de precedência)
+sin() - calcula o seno de um ângulo
+cos() - calcula o coseno de um ângulo
+tan() - calcula o tangente de um ângulo
+sqrt() - calcula a raiz quadrada de um número (pode usar também num ** (1/2), para raiz cúbica basta trocar o 2 pelo 3)
+
+números aleatórios:
+rand() - gera da função antiga
+mt_rand() - gera com algoritmos mais seguros, rápidos e melhores (o mais recomendável)
+random_int() - gera números inteiros aleatórios criptograficamente seguros (algoritmo mais lento)
+
+outras funções:
+number_format() - formata os números
+numfmt_create("pt_BR", NumberFormatter::CURRENCY) - formata moedas com internacionalização  (cria)
+numfmt_format_currency($padrao, $numero, "BRL") - aplica o formato biblioteca intl
+json_decode(file_get_contents($url), true) - decodifica códigos json
+date("m-d-Y", strtotime("-7 days")) - tira os dias do date
+setcookie() - seta cookies (coloque sempre como as primeiras declarações do seu código php)
+session_start() - inicia a sessão
