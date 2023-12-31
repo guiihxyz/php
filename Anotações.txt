@@ -97,3 +97,4 @@ json_decode(file_get_contents($url), true) - decodifica códigos json
 date("m-d-Y", strtotime("-7 days")) - tira os dias do date
 setcookie() - seta cookies (coloque sempre como as primeiras declarações do seu código php)
 session_start() - inicia a sessão
+<?=$_SERVER["PHP_SELF"]?> - passa o próprio arquivo no action
