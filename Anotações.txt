@@ -103,6 +103,12 @@ como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
 $mp = ($valor1 * $peso1 + $valor2 * $peso2) / ($peso1 + $peso2);
 
+horários em segundo:
+1 minuto - 60s
+1 hora - 3600s
+1 dia - 86400s
+1 semana - 604800s
+
 Criar um Array:
 Array Indexado:
 $array = array("Maçã", "Banana", "Laranja");
