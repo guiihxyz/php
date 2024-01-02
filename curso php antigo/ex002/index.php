@@ -7,16 +7,40 @@
     <style>
         * {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 2em;
+            font-size: 1.5em;
+        }
+
+        body {
+            padding: 15px;
         }
     </style>
 </head>
 <body>
     <?php 
-        $idade = 20;
+        $operador = "soma";
 
-        switch($idade) {
-            
+        switch($operador) {
+            case "soma":
+                echo "é pra somar";
+                break;
+            case "subtrair":
+                echo "é pra subtrair";
+                break;
+            default:
+                echo "erro";
+        }
+
+        $numeros = 1;
+        
+        switch($numeros) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                echo "numeros de 1 a 4";
+                break;
+            default:
+                echo "erro";
         }
     ?>
 </body>
