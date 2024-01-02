@@ -98,3 +98,45 @@ date("m-d-Y", strtotime("-7 days")) - tira os dias do date
 setcookie() - seta cookies (coloque sempre como as primeiras declarações do seu código php)
 session_start() - inicia a sessão
 <?=$_SERVER["PHP_SELF"]?> - passa o próprio arquivo no action
+
+como fazer médias:
+$ma = ($valor1 + $valor2) / 2;
+$mp = ($valor1 * $peso1 + $valor2 * $peso2) / ($peso1 + $peso2);
+
+Criar um Array:
+Array Indexado:
+$array = array("Maçã", "Banana", "Laranja");
+
+Array Associativo:
+$frutas = array("a" => "Maçã", "b" => "Banana", "c" => "Laranja");
+
+Acessar Elementos do Array:
+echo $array[0]; // Saída: Maçã
+echo $frutas['b']; // Saída: Banana
+
+Adicionar Elementos:
+$array[] = "Pera"; // Adiciona 'Pera' ao final do array indexado
+$frutas['d'] = "Abacaxi"; // Adiciona 'Abacaxi' ao array associativo
+
+Contar Elementos:
+echo count($array); // Retorna o número de elementos no array
+
+Iterar por um Array:
+foreach:
+foreach($array as $valor) {
+    echo $valor . ", ";
+}
+// Saída: Maçã, Banana, Laranja, Pera,
+
+Verificar se um Elemento Existe no Array:
+if (in_array("Maçã", $array)) {
+    echo "Maçã está no array!";
+}
+
+Ordenar um Array:
+sort($array); // Ordena um array indexado
+asort($frutas); // Ordena um array associativo mantendo a associação com os valores
+
+Remover Elementos do Array:
+unset($array[1]); // Remove o elemento de índice 1 do array indexado
+unset($frutas['b']); // Remove o elemento com a chave 'b' do array associativo
