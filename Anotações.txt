@@ -108,6 +108,19 @@ explode() - transforma as palavras de uma string em vetor
 implode() ou join() - transforma um vetor em palavras (string)
 chr() - mostra a letra do código chr
 ord() - transforma a letra em código chr
+strtolower() - transforma a string toda em letra minúscula
+strtoupper() - transforma a string toda em letra maiúscula
+ucfirst() - transforma a primeira letra de cada palavra na string em maiúscula, mantendo as outras letras
+ucwords() - transforma a primeira letra das palavras na string em maiúscula e deixando todas as outras letras minúscula
+strrev() - deixa uma string ao contrário
+strpos() - mostra a primeira posição da palavra escolhida na string
+stripos - mostra a primeira posição da palavra escolhida na string independente se estiver em maiúsculo ou minúsculo
+substr_count() - mostra quantas vezes a palavra escolhida apareceu na string
+substr() - começando em tal índice vai até tal índice na string, o resto será apagado
+str_pad($string, $numero_de_letras, " ", STR_PAD_DIREÇÃO) - faz uma string caber em tantos caractéres (right, left, center)
+str_repeat() - faz repetir a palavra escolhida o número de vezes escolhido
+str_replace() - troca a palavra escolhida por outra palavra escolhida em uma string
+str_ireplace() - troca a palavra escolhida por outra palavra escolhida em uma string independente se estiver em maiúsculo ou minúsculo
 
 como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
