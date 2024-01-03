@@ -98,6 +98,16 @@ date("m-d-Y", strtotime("-7 days")) - tira os dias do date
 setcookie() - seta cookies (coloque sempre como as primeiras declarações do seu código php)
 session_start() - inicia a sessão
 <?=$_SERVER["PHP_SELF"]?> - passa o próprio arquivo no action
+print_r() - gera uma saída de teste (vetor)
+strlen() - tamanho total de uma string
+trim() - tira os espaços de uma string
+ltrim() - tira os espaços apenas no início
+rtrim() - tira os espaços apenas no final
+str_word_count($frase, num) - conta quantas palavras tem em uma string (num 0 transforma as palavras em int, num 1 transforma em vetor, num 2 transforma em vetor mudando o índice de acordo com as letras)
+explode() - transforma as palavras de uma string em vetor
+implode() ou join() - transforma um vetor em palavras (string)
+chr() - mostra a letra do código chr
+ord() - transforma a letra em código chr
 
 como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
