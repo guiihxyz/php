@@ -109,6 +109,12 @@ horários em segundo:
 1 dia - 86400s
 1 semana - 604800s
 
+comandos de funções:
+$s = func_get_args() - coloca todos os parâmetros da função dentro de um vetor
+$x = func_num_args() - retorna o número de parâmetros passados na função
+function mudarValor(&$x) {} - parâmetro de referência
+include "funcoes.php"; - inclui todas as funções do seu arquivo no seu arquivo atual (o include tenta continuar o código caso o arquivo não exista, já o require para o arquivo na hora, mas tirando esse, ambos possuem a mesma função, já o include_once e required_once, ao tentar ser carregado, se já existir eles carregados não é carregado, apenas se não tiver)
+
 Criar um Array:
 Array Indexado:
 $array = array("Maçã", "Banana", "Laranja");
