@@ -121,6 +121,17 @@ str_pad($string, $numero_de_letras, " ", STR_PAD_DIREÇÃO) - faz uma string cab
 str_repeat() - faz repetir a palavra escolhida o número de vezes escolhido
 str_replace() - troca a palavra escolhida por outra palavra escolhida em uma string
 str_ireplace() - troca a palavra escolhida por outra palavra escolhida em uma string independente se estiver em maiúsculo ou minúsculo
+count() - conta quantos elementos tem no vetor
+$vetor[] = "" ou array_push() - adiciona um item no fim do vetor
+array_pop() ou unset() - elimina o último elemento do vetor
+array_shift() - elimina o primeiro elemento do vetor
+array_unshift() - adiciona um elemento no início do vetor
+sort() - coloca ao elementos do vetor em ordem crescente
+rsort() - coloca os elementos do vetor em ordem decrescente
+asort() - muda a ordem mas mantém os índices dos números em forma crescente
+arsort() - muda a ordem mas mantém os índices dos números em forma decrescente
+ksort() - coloca os índices em ordem crescente
+krsort() - coloca os índices em ordem decrescente
 
 como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
