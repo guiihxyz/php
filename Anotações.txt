@@ -132,6 +132,7 @@ asort() - muda a ordem mas mantém os índices dos números em forma crescente
 arsort() - muda a ordem mas mantém os índices dos números em forma decrescente
 ksort() - coloca os índices em ordem crescente
 krsort() - coloca os índices em ordem decrescente
+isset() - se a variável exite
 
 como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
@@ -149,40 +150,7 @@ $x = func_num_args() - retorna o número de parâmetros passados na função
 function mudarValor(&$x) {} - parâmetro de referência
 include "funcoes.php"; - inclui todas as funções do seu arquivo no seu arquivo atual (o include tenta continuar o código caso o arquivo não exista, já o require para o arquivo na hora, mas tirando esse, ambos possuem a mesma função, já o include_once e required_once, ao tentar ser carregado, se já existir eles carregados não é carregado, apenas se não tiver)
 
-Criar um Array:
-Array Indexado:
-$array = array("Maçã", "Banana", "Laranja");
-
-Array Associativo:
-$frutas = array("a" => "Maçã", "b" => "Banana", "c" => "Laranja");
-
-Acessar Elementos do Array:
-echo $array[0]; // Saída: Maçã
-echo $frutas['b']; // Saída: Banana
-
-Adicionar Elementos:
-$array[] = "Pera"; // Adiciona 'Pera' ao final do array indexado
-$frutas['d'] = "Abacaxi"; // Adiciona 'Abacaxi' ao array associativo
-
-Contar Elementos:
-echo count($array); // Retorna o número de elementos no array
-
-Iterar por um Array:
-foreach:
-foreach($array as $valor) {
-    echo $valor . ", ";
-}
-// Saída: Maçã, Banana, Laranja, Pera,
-
 Verificar se um Elemento Existe no Array:
 if (in_array("Maçã", $array)) {
     echo "Maçã está no array!";
 }
-
-Ordenar um Array:
-sort($array); // Ordena um array indexado
-asort($frutas); // Ordena um array associativo mantendo a associação com os valores
-
-Remover Elementos do Array:
-unset($array[1]); // Remove o elemento de índice 1 do array indexado
-unset($frutas['b']); // Remove o elemento com a chave 'b' do array associativo
