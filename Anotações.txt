@@ -133,6 +133,7 @@ arsort() - muda a ordem mas mantém os índices dos números em forma decrescent
 ksort() - coloca os índices em ordem crescente
 krsort() - coloca os índices em ordem decrescente
 isset() - se a variável exite
+exit() ou die() - encerram por completo um código
 
 como fazer médias:
 $ma = ($valor1 + $valor2) / 2;
@@ -154,3 +155,11 @@ Verificar se um Elemento Existe no Array:
 if (in_array("Maçã", $array)) {
     echo "Maçã está no array!";
 }
+
+comandos com mysql:
+mysqli_connect() - conexão com o banco de dados
+mysqli_connect_error() - retorna o erro em uma string
+mysqli_connect_errno() - retorna o erro em seu número
+mysqli_query($conexao, "SELECT * FROM tabela") - faz uma busca na tabela
+mysqli_fetch_assoc() - transforma os resultados em um array
+mysqli_prepare - cria uma sentença preparada
